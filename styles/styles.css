@@ -32,7 +32,7 @@ main {
 
 aside{
     width: 23rem;
-    margin: 1rem solid rgb(0 0 0 / 0.2); /* 🗣️ */
+    margin: 1rem rgb(0 0 0 / 0.2); /* 🗣️ */
     border: 2px;
     padding: 1rem;
     background-color: #bbddecee;
