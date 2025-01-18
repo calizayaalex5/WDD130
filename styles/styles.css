@@ -32,8 +32,8 @@ main {
 
 aside{
     width: 23rem;
-    margin: 1rem rgb(0 0 0 / 0.2); /* 🗣️ */
-    border: 2px;
+    margin: 1rem 
+    border: 2px solid rgb(0 0 0 / 0.2); /* 🗣️ */; 
     padding: 1rem;
     background-color: #bbddecee;
     color: black;
