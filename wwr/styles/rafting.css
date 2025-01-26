@@ -1,0 +1,135 @@
+body{
+    max-width: 1200px;
+    margin: 0;
+    padding: 0 20px;
+    font-family: "Quicksand", serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+header h1{
+    font-size: 70px;
+    text-align: center;
+    color: #EDEBF3;
+    font-family: "Quicksand", serif;
+    font-weight: 300;
+    margin: 20px 0 70px 30px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 15px;
+}
+
+div h1{
+    font-size: 50px;
+    text-align: right;
+    color: #EDEBF3;
+    font-family: "Quicksand", serif;
+    font-weight: 400;
+}
+
+article p{
+    font-size: 24px;
+    color: #EDEBF3;
+    margin: 15px 0 10px 10px;
+}
+
+h2{
+    font-size: 50px;
+    color: #D77A61;
+    font-family: "Quicksand", serif;
+    font-weight: 400;
+
+}
+
+section p{
+    font-size: 24px;
+    color: #3A4F41;
+}
+
+footer p{
+    text-align: center;
+    font-size: 20px;
+    color: #3A4F41;
+    margin-bottom: 10px;
+}
+
+/* Ahora vamos con las imagenes */
+
+.hero > img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article img{
+    display: block;
+    width: 120px;
+    height: auto;
+    float: right;
+    margin: 15px 15px 10px 15px;
+}
+
+section img{
+    width: 50%;
+}
+
+.sociallinks img{
+    width: 50px; 
+    height: auto; 
+    margin: 5px; 
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* aqui veremos los bloques */
+
+header{
+    position: absolute;
+    width: 1200px;
+    height: 150px; /* Altura del header */
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 150px;
+}
+
+article{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 350px;
+    max-width: 1000px;
+    margin: 10px auto ;
+    right: 600px;
+ 
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+  
+}
+
+footer{
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    padding: 20px;
+}
+
+footer .socialicons {
+    display: flex; /* Alinea las imágenes en una fila */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 15px; /* Espaciado entre las imágenes */
+}
+
