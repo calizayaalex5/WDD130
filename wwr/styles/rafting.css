@@ -1,135 +1,244 @@
-body{
-    max-width: 1200px;
-    margin: 0;
-    padding: 0 20px;
-    font-family: "Quicksand", serif;
+/* encabezado */
+header{
+    background-color: #D77A61;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid #D77A61;
+    max-width: 1920px;
+}
+.logo img{
+    margin: 0 0.25rem 0 1rem;
+    width: 64px;
+    height: auto;
+}
+    
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;   
 }
 
-a{
+.navigation li{
+    flex: 1 1 auto;
+}
+
+.navigation a{
+    display: block;
+    color: ghostwhite;
+    padding: 20px;
     text-decoration: none;
-}
-
-header h1{
-    font-size: 70px;
-    text-align: center;
-    color: #EDEBF3;
+    font-size: 1.2rem;
     font-family: "Quicksand", serif;
-    font-weight: 300;
-    margin: 20px 0 70px 30px;
 }
 
-nav ul{
+/* parte de la imagen con letras adentro */
+
+.hero{
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 1fr 75% 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    align-items: center;
+    max-width: 1920px;
+    
+}
+
+.hero img{
+    max-width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    z-index: 0;
+    object-fit: cover;
+}
+
+.hero h1{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    
+    z-index: 1;
+    color: ghostwhite;
+
     display: flex;
     justify-content: center;
-    padding: 10px 0;
-    list-style: none;
-}
 
-nav ul li{
-    margin: 0 15px;
-}
-
-div h1{
-    font-size: 50px;
-    text-align: right;
-    color: #EDEBF3;
+    font-size: 60px;
     font-family: "Quicksand", serif;
-    font-weight: 400;
-}
-
-article p{
-    font-size: 24px;
-    color: #EDEBF3;
-    margin: 15px 0 10px 10px;
-}
-
-h2{
-    font-size: 50px;
-    color: #D77A61;
-    font-family: "Quicksand", serif;
-    font-weight: 400;
-
-}
-
-section p{
-    font-size: 24px;
-    color: #3A4F41;
-}
-
-footer p{
-    text-align: center;
-    font-size: 20px;
-    color: #3A4F41;
-    margin-bottom: 10px;
-}
-
-/* Ahora vamos con las imagenes */
-
-.hero > img{
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero article img{
-    display: block;
-    width: 120px;
-    height: auto;
-    float: right;
-    margin: 15px 15px 10px 15px;
-}
-
-section img{
-    width: 30%;
-}
-
-.sociallinks img{
-    width: 50px; 
-    height: auto; 
-    margin: 5px; 
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-/* aqui veremos los bloques */
-
-header{
-    position: absolute;
-    width: 1200px;
-    height: 150px; /* Altura del header */
-    background-color: rgba(0, 0, 0, 0.5);
-    top: 150px;
 }
 
 article{
-    position: absolute;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+
+
+    z-index: 1;
     background-color: rgba(0, 0, 0, 0.5);
-    top: 350px;
-    max-width: 1000px;
-    margin: 10px auto ;
-    right: 600px;
- 
+    
 }
 
-section {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1px;
-  
+article img{
+    max-width: 100%;
+    height: auto;
+    grid-column: 2;
+    
 }
+
+article p{
+    grid-column: 1;
+    color: aquamarine;
+    font-size: 25px;
+    font-family: "Quicksand", serif;
+}
+
+
+/* history part */
+
+.History{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px;
+    grid-gap: 20px;
+    background-color: #3A4F41 ;
+    max-width: 1920px;
+    min-height: 500px;
+
+}
+
+.History h2{
+    grid-column: 2 /3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: ghostwhite;
+    font-family: "Quicksand", serif;
+}
+
+.History img{
+    width: 100%;
+    height: auto;
+
+    grid-column: 2 / 3;
+    grid-row:  2 / 3;
+}
+
+.Column1{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    color: ghostwhite;
+    padding: 20px;
+    font-family: "Quicksand", serif;
+
+}
+
+.Column2{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    color: ghostwhite;
+    padding: 20px;
+    font-family: "Quicksand", serif;
+}
+
+/*Adventure Awaits you part*/
+
+.Adventure{
+    background-color: #D77A61;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100pxfr 2fr;
+    max-width: 19200px;
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.Adventure h2{
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+
+    display: flex;
+    justify-content: center;
+    font-family: "Quicksand", serif;
+}
+
+.Adventure .adventure1 img{
+    width: 200px;
+    height: auto; 
+    margin: 10px;
+    padding: 10PX;
+}
+
+
+.Adventure .adventure2 img{
+    width: 200px;
+    height: auto;
+    margin: 10px; 
+    padding: 210PX;
+}
+
+.Adventure .adventure3 img{
+    width: 200px;
+    height: auto;
+    margin: 10px; 
+    padding: 10PX;
+}
+
+.Adventure .adventure4 img{
+    width: 200px;
+    height: auto;
+    margin: 10px; 
+    padding: 10PX;
+}
+
+.Adventure .adventure5 img{
+    width: 120px;
+    height: auto;
+    margin: 10px; 
+    padding: 10PX;
+}
+
+/* footer */
 
 footer{
     display: flex;
-    justify-content: column;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1200px;
+    max-height: 100px;
+    background-color: #457EAC ;
+    text-align: center;
+    position: relative;
+    max-width: 1920px;
 }
 
-footer .socialicons {
-    display: flex; /* Alinea las imágenes en una fila */
-    justify-content: center; /* Centra las imágenes horizontalmente */
-    gap: 15px; /* Espaciado entre las imágenes */
+footer p{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    color: ghostwhite;
+    font-family: "Quicksand", serif;
+    
 }
 
+footer nav{
+    position: absolute;
+    right: 5%;
+    display: flex;
+    gap: 15px;
+}
+
+footer nav img{
+    width: 20px;
+}
+
+footer nav img:hover {
+    transform: scale(1.2);
+}
