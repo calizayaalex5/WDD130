@@ -285,7 +285,7 @@ div.contactus{
     grid-template-columns: 1fr 1fr;
     min-height: 250px;
     gap: 20px;
-    justify-items: center; /
+    justify-items: center; 
     align-items: center; 
     text-align: center; 
 
