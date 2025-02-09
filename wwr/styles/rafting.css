@@ -403,7 +403,7 @@ fieldset {
 legend{
     padding: 0.5rem;
     color: navy;
-    font-size: 1,3rem;
+    font-size: 1.3rem;
 }
 
 legend, label, input, button, select, textarea{
@@ -433,7 +433,7 @@ button {
     border: none;
     border-radius: .5rem;
     padding: .75rem;
-    font-size: 1,2rem;
+    font-size: 1.2rem;
 }
 
 button:hover{
